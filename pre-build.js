@@ -1,5 +1,7 @@
 /* eslint "prefer-template": "off" */
 
+console.log('CHAKRA PRE-BUILD');
+
 var os = require('os');
 var https = require('https');
 var fs = require('fs');
