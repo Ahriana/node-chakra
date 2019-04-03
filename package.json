@@ -6,11 +6,12 @@
   "author": "RosieCode95 <rosiecode@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "preinstall": "node pre-build.js",
-    "postinstall": "node post-build.js"
+    "build": "node-gyp -j 16 build",
+    "postinstall": "node pre-build.js && node-gyp configure && node-gyp build && node post-build.js"
   },
   "dependencies": {
     "nan": "^2.13.2",
+    "node-gyp": "^3.8.0",
     "unzip": "^0.1.11"
   }
 }
