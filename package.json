@@ -1,0 +1,16 @@
+{
+  "name": "node-chakra",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "repository": "git@github.com:RosieCode95/node-chakra.git",
+  "author": "RosieCode95 <rosiecode@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "preinstall": "node pre-build.js",
+    "postinstall": "node post-build.js"
+  },
+  "dependencies": {
+    "nan": "^2.13.2",
+    "unzip": "^0.1.11"
+  }
+}
