@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "build": "node-gyp -j 16 build",
-    "postinstall": "node pre-build.js && node-gyp configure && node-gyp build && node post-build.js"
+    "install": "node-gyp configure",
+    "postinstall": "node pre-build.js && node-gyp build && node post-build.js"
   },
   "dependencies": {
     "nan": "^2.13.2",
