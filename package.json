@@ -8,11 +8,15 @@
   "scripts": {
     "build": "node-gyp -j 16 build",
     "install": "node-gyp configure",
-    "postinstall": "node pre-build.js && node-gyp build && node post-build.js"
+    "postinstall": "node pre-build.js && node-gyp build && node post-build.js",
+    "test": "mocha"
   },
   "dependencies": {
     "nan": "^2.13.2",
     "node-gyp": "^3.8.0",
     "unzip": "^0.1.11"
+  },
+  "devDependencies": {
+    "mocha": "^6.0.2"
   }
 }
