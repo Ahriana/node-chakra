@@ -16,3 +16,4 @@ addons:
 os:
 - osx
 - linux
+- windows
