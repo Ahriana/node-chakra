@@ -12,6 +12,5 @@ addons:
     - gcc-multilib
     - g++-multilib
 os:
-- osx
 - linux
 - windows
